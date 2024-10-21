@@ -1,0 +1,90 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+   }
+   header{
+     display: flex;
+     justify-content: space-between;
+     min-height: 70px;
+     background-color: rgb(206, 167, 250);
+     align-items: center;
+     padding: 10px;
+     position: relative;
+     z-index: 2;
+   }
+   a{
+     text-decoration: none;
+     color: black;
+   }
+   nav a{
+     font-weight: 600;
+     padding-right: 10px;
+   }
+   nav a:hover{
+     color: red;
+   }
+   @media (max-width:700px){
+     header{
+       flex-direction: column;
+     }
+     nav{
+       padding: 10px 0px;
+     }
+   }
+   .logo{
+     display: flex;
+     align-items: center;
+   }
+   .logo img{
+     height: 100px;
+     margin-right: 10px;
+   }
+   #hola{
+     min-height: 100vh;
+     position: relative;
+   }
+   video{
+     position:absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+   }
+   
+   .capa{
+     position:absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     background-color: black;
+     opacity: 0.5;
+     mix-blend-mode: overlay;
+   }
+   h1{
+     color: white;
+     text-shadow: 1px 2px 2px black, 0 0 25px blue, 0 0 5px blue;
+     text-align: center;
+   }
+   div.galeria{
+     margin: 10px 20px;
+     box-shadow: 0 4px 8px 0 lightskyblue 0 6px 20px 0 rgba(0,0,0,0.19);
+     float: left;
+     width: 350px;
+   }
+   div.galeria img{
+     width: 100%;
+     height: auto;
+   }
+    div.galeria:hover{
+     border: 1px solid lightcoral;
+     transform: rotate(-3deg);
+    }
+    div.pie{
+     text-align: center;
+     text-shadow: 2px 2px 5px purple;
+     padding: 10px;
+    }
+   
+   
